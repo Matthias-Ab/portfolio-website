@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthias Abddisa - Terminal Portfolio</title>
+    
+    <!-- External Dependencies -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Matthias Abddisa - IT Director & Full-Stack Developer. Interactive terminal portfolio showcasing cybersecurity, system administration, and web development expertise.">
+    <meta name="keywords" content="IT Director, Full-Stack Developer, Cybersecurity, System Administration, Web Development, Portfolio">
+    <meta name="author" content="Matthias Abddisa">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Matthias-Ab/terminal-portfolio">
+    <meta property="og:title" content="Matthias Abddisa - Terminal Portfolio">
+    <meta property="og:description" content="Interactive terminal-style portfolio showcasing IT expertise">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Matthias Abddisa - Terminal Portfolio">
+    <meta property="twitter:description" content="Interactive terminal-style portfolio showcasing IT expertise">
+</head>
+<body>
+    <!-- Enhanced Background Effects -->
+    <div class="background-effects">
+        <div class="grid-overlay"></div>
+        <div id="codeFloats"></div>
+    </div>
+
+    <!-- Matrix Background -->
+    <div class="matrix-bg" id="matrixBg"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-indicator">
+            <div class="status-dot"></div>
+            <span>System Online</span>
+        </div>
+    </div>
+
+    <!-- Main Terminal Container -->
+    <div class="terminal-container">
+        <!-- Terminal Header -->
+        <div class="terminal-header">
+            <div class="terminal-title">matthias@portfolio:~$ Advanced IT Terminal v2.0</div>
+            <div style="display: flex; align-items: center;">
+                <div class="signal-indicator">
+                    <div class="signal-bar"></div>
+                    <div class="signal-bar"></div>
+                    <div class="signal-bar"></div>
+                </div>
+                <div class="terminal-controls">
+                    <div class="control-btn close"></div>
+                    <div class="control-btn minimize"></div>
+                    <div class="control-btn maximize"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terminal Body -->
+        <div class="terminal-body" id="terminalBody">
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <div class="output-line info">╔══════════════════════════════════════════════════════════════════════════════════╗</div>
+                <div class="output-line info">║                          ⚡ MATTHIAS TERMINAL PORTFOLIO ⚡                        ║</div>
+                <div class="output-line info">║                              Advanced IT Professional                             ║</div>
+                <div class="output-line info">╚══════════════════════════════════════════════════════════════════════════════════╝</div>
+                
+                <div class="logo-ascii">
+    ███╗   ███╗ █████╗ ████████╗████████╗██╗  ██╗██╗ █████╗ ███████╗
+    ████╗ ████║██╔══██╗╚══██╔══╝╚══██╔══╝██║  ██║██║██╔══██╗██╔════╝
+    ██╔████╔██║███████║   ██║      ██║   ███████║██║███████║███████╗
+    ██║╚██╔╝██║██╔══██║   ██║      ██║   ██╔══██║██║██╔══██║╚════██║
+    ██║ ╚═╝ ██║██║  ██║   ██║      ██║   ██║  ██║██║██║  ██║███████║
+    ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝
+                </div>
+                
+                <div class="output-line success">🚀 System initialized with quantum processing...</div>
+                <div class="output-line">👤 User: <span class="info">Matthias Abddisa</span></div>
+                <div class="output-line">💼 Role: <span class="warning">IT Director & Full-Stack Developer</span></div>
+                <div class="output-line">📍 Location: <span class="info">Addis Ababa, Ethiopia</span></div>
+                <div class="output-line">⚡ Status: <span class="success">Online • Ready for Innovation</span></div>
+                <div class="output-line">🎯 Expertise: <span class="cyan">System Admin • Cybersecurity • Web Dev</span></div>
+                <div class="output-line">───────────────────────────────────────────────────────────────────</div>
+                <div class="output-line typewriter">Type <span class="user-input">'help'</span> to explore my digital realm...</div>
+                <div class="output-line">───────────────────────────────────────────────────────────────────</div>
+            </div>
+
+            <!-- Dynamic Output Container -->
+            <div id="output"></div>
+        </div>
+
+        <!-- Command Input Container -->
+        <div class="command-input-container">
+            <div id="autocompleteSuggestions" class="autocomplete-suggestions" style="display: none;"></div>
+            <div class="current-line">
+                <span class="command-prompt">matthias@portfolio:~$</span>
+                <input type="text" id="commandInput" autocomplete="off" spellcheck="false" placeholder="Type a command...">
+                <span class="cursor-blink">█</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
